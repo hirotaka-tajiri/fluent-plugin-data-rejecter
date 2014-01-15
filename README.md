@@ -51,4 +51,4 @@ config  |  tag  #=> result
 
 ## Copyright
 
-Copyright (c) 2014 Hirotaka Tajiri. See [LICENSE.txt](LICENSE) for details.
+Copyright (c) 2014 Hirotaka Tajiri. See [LICENSE](LICENSE.txt) for details.
