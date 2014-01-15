@@ -43,7 +43,7 @@ output
 
 ### remove_prefix (complete matching)
 
-config  |  tag => result
+config  |  tag  #=> result
 
     abc  | abc.def.tag #=> removed
     abc. | abc.def.tag #=> removed
