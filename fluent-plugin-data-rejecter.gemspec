@@ -4,12 +4,12 @@ $:.push File.expand_path('../lib', __FILE__)
 
 Gem::Specification.new do | gs |
     gs.name          = "fluent-plugin-data-rejecter"
-    gs.version       = "0.0.1"
+    gs.version       = "1.0.0"
     gs.authors       = ["Hirotaka Tajiri"]
     gs.email         = "ganryu_koziro@excite.co.jp"
     gs.homepage      = "https://github.com/hirotaka-tajiri/fluent-plugin-data-rejecter"
-    gs.description   = "Output filer plugin reject key pair that matches specified conditions"
-    gs.summary       = gs.description
+    gs.description   = "Fluent plugin Output filer to reject key pair"
+    gs.summary       = "Output filter plugin to reject key pair"
     gs.licenses      = ["MIT"]
     gs.has_rdoc      = false
 
@@ -18,7 +18,7 @@ Gem::Specification.new do | gs |
     gs.executables   = `git ls-files -- bin/*`.split("\n").map{| f | File.basename(f)}
     gs.require_paths = ['lib']
 
-    gs.add_dependency 'fluentd', "~> 0.10.17"
-    gs.add_development_dependency "rake"
-    gs.add_development_dependency "rspec"
+    gs.add_dependency 'fluentd', "~> 0.10"
+    gs.add_development_dependency "rake", '~>0'
+    gs.add_development_dependency "rspec", '~>0'
 end

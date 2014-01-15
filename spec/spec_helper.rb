@@ -6,5 +6,3 @@ require 'rspec'
 require 'fluent/test'
 
 Dir["./lib/**/*.rb"].each{| f | require f}
-
-Dir["./spec/*.rb"].each{| f | require f}
