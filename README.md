@@ -43,11 +43,11 @@ output
 
 ### remove_prefix (complete matching)
 
-config | tag => result
+config  |  tag => result
 
-    abc  | abc.def.tag => removed
-    abc. | abc.def.tag => removed
-    ab   | abc.def.tag => not removed
+    abc  | abc.def.tag #=> removed
+    abc. | abc.def.tag #=> removed
+    ab   | abc.def.tag #=> not removed
 
 ## Copyright
 
