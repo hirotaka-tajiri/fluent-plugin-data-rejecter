@@ -188,6 +188,23 @@ describe Fluent::DataRejecterOutput do
             expect(emits[1][2].size).to eq 2
         end
 
+        it 'tag change(all_remove & no_addadd)' do
+            d = create_driver(%[
+                                   remove_prefix old.tag
+                                   reject_keys   key1
+                               ], 'old.tag')
+            d.run do
+                d.emit({'a' => 'b'},             time_now)
+                d.emit({'c' => 'd', 'e' => 'f'}, time_now)
+            end
+            emits = d.emits
+            expect(emits.size      ).to eq 2
+            expect(emits[0][0]     ).to eq 'data_rejecter.tag_lost'
+            expect(emits[0][2].size).to eq 1
+            expect(emits[1][0]     ).to eq 'data_rejecter.tag_lost'
+            expect(emits[1][2].size).to eq 2
+        end
+
         it 'tag change & data reject1 & add)' do
             d = create_driver(%[
                                    remove_prefix abc
