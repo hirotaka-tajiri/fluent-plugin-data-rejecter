@@ -8,7 +8,8 @@ Output plugin to reject key pairs
 * remove tag prefix
 * add tag prefix
 
-## Parameters
+## Configuration
+### Parameters
 
 - remove_prefix
 
@@ -22,9 +23,7 @@ Output plugin to reject key pairs
 
     reject key pair for re-emit.
 
-## Configuration
-
-Example:
+### Example
 
     <match abc.def.**>
         type          data_rejecter
