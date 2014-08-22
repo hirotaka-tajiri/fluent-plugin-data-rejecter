@@ -1,4 +1,4 @@
-#fluent-plugin-data-rejecter
+#fluent-plugin-data-rejecter, a plugin for [Fluentd](http://fluentd.org)
 
 ## Overview
 
